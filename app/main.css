@@ -1,0 +1,14 @@
+.font-yahei {
+  font-family: '\5fae\8f6f\96c5\9ed1';
+}
+.font-song {
+  font-family: '\5b8b\4f53';
+}
+.red {
+  color: red;
+}
+.box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

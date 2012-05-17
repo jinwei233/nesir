@@ -19,6 +19,7 @@ Mr Ness
 * step3
 新建一个与你的cdn路径相对应的文件夹app，现在你的目录结构大概是这样的
 
+<pre>
     ├── app
     │   ├── main.css
     │   └── main.less
@@ -31,6 +32,7 @@ Mr Ness
     ├── proxy.js
     ├── README.md
     └── run.cmd
+</pre>
 
 * step4
   进入命令行执行下面命令 (运行前确认你的80端口没有被占用)

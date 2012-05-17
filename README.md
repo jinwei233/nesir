@@ -4,28 +4,25 @@ Mr Ness
 * 可是……每次写完less都要重新编译，也很烦，是不是
 * 那么，用Mr Ness吧
 
-How
----
-配置host及资源路径
-
-如果css上线后的地址为http://example.cdn.com/app/css/main.css
+安装步骤
+--------
+* step1
+如果cdn地址为 http://example.cdn.com/app/css/main.css
 在c:/Windows/System32/drivers/etc/host添加一行
-127.0.0.1 example.cdn.com
 
- 安装nodejs
+    127.0.0.1 example.cdn.com
+* step2
+  当前路径比如在F:/site/
 
- git clone 本仓库
+    git clone git@github.com:WeweTom/nesir.git
 
- clone下来，比如在F:/site/
- 新建一个文件夹app，那么现在看起来的文件夹结构是这样的
- +app
- +less
- +node_modules
- -proxy.js
+* step3
+  进入命令行执行下面命令 (运行前确认你的80端口没有被占用)
 
-运行proxy.js(运行前确认你的80端口没有被占用)
-cd F:\site\
-node proxy.js
+    run.cmd
+
+
+新建一个文件夹app与你的cdn路径相对应
 
 现在所有线上的example.cdn.com的资源都代理到本地了
 

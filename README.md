@@ -17,12 +17,25 @@ Mr Ness
     git clone git@github.com:WeweTom/nesir.git
 
 * step3
+新建一个与你的cdn路径相对应的文件夹app，现在你的目录结构大概是这样的
+
+├── app
+│   ├── main.css
+│   └── main.less
+├── config.js
+├── less
+│   └── lib.less
+├── lib
+│   ├── node.exe
+│   └── node_modules
+├── proxy.js
+├── README.md
+└── run.cmd
+* step4
   进入命令行执行下面命令 (运行前确认你的80端口没有被占用)
 
     run.cmd
 
-
-新建一个文件夹app与你的cdn路径相对应
 
 现在所有线上的example.cdn.com的资源都代理到本地了
 

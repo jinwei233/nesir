@@ -62,8 +62,12 @@ nesir会检查 http://example.cdn.com/app/css/main.less 存在否，如果存在
 
 这样在开发时，就能边写less，边查看demo效果啦
 
-当demo开发完毕后，最终上线的代码还是必须为css，这时候就需要将main.less的结果编译为main.css，这样来编译
+当demo开发完毕后，最终上线的代码还是必须为css，这时候就需要将main.less的结果编译为main.css，通过在浏览器里输入
+
+<pre>
 http://example.cdn.com/app/css/main.css?_build_less_
+</pre>
+
 nesir会就会将main.less编译后的结果存成main.css
 
 然后呢？
@@ -104,7 +108,7 @@ lessBuildExtension:'.source.css'，这样编译main.less生成的文件就为mai
 额外的配置
 ----------
 
-    pubServer nesir在本机找不到资源的时候会到线上去取
+    pubServer:'www.eg.com' //nesir在本机找不到资源的时候会到线上去取
 	
 
 note

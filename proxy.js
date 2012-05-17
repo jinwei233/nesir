@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+/**
+ * author jide@taobao.com
+ * modified by yuanhuang : add surport of less precompile
+ */
+
 "use strict";
 
 var assert = require('assert'),
@@ -16,7 +21,7 @@ var USE_LOCAL = true,
     USE_PRE = false,
     IP_PRE = '110.75.14.33',
     IP_PUB,
-    PUB_SRV = 'assets.gslb.taobao.com',
+    PUB_SRV = config.pubServer || 'assets.gslb.taobao.com',
     MIME = {
         js: 'application/x-javascript',
         css: 'text/css',

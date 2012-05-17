@@ -31,6 +31,16 @@ node proxy.js
 
 预编译less
 ----------
+稍大一点的网站都是用独立域名的cdn来放静态资源文件的
+<html>
+  <head>
+    <link href="http://example.cdn.com/app/css/main.css"/>
+  </head>
+  some more snippet
+</html>
+
+前端在做demo的时候需要模拟cdn环境，也就是说资源路径也要是cdn资源路径，我们可以通过配置host来指向本机，nesir本身即是一个代理
+
 当你访问 http://example.cdn.com/app/css/main.css
 nesir会检查 http://example.cdn.com/app/css/main.less 存在否，如果存在，则返回main.less编译后的结果
 
@@ -74,6 +84,12 @@ cssGaga使用的文件后缀名为.source.css
 lessBuildExtension:'.source.css'，这样编译main.less生成的文件就为main.source.less，再通过cssGaga处理，最终生成main.css。
 
 强烈推荐cssGaga，自动拼图的功能太赞了，可惜依赖.net环境，不能再linux上使用
+
+额外的配置
+----------
+
+    pubServer nesir在本机找不到资源的时候会到线上去取
+	
 
 note
 -----

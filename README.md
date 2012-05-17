@@ -31,8 +31,8 @@ node proxy.js
 
 预编译less
 ----------
-当你访问http://example.cdn.com/app/css/main.css
-nesir会检查http://example.cdn.com/app/css/main.less存在否，如果存在，则返回main.less编译后的结果
+当你访问 http://example.cdn.com/app/css/main.css
+nesir会检查 http://example.cdn.com/app/css/main.less 存在否，如果存在，则返回main.less编译后的结果
 
 这样在开发时，就能边写less，边查看demo效果啦
 
@@ -59,7 +59,8 @@ nesir会就会将main.less编译后的结果存成main.css
 	  .border-radius(5px);
 	}
 
-在浏览器中输入http://example.cdn.com/app/main.css ，你将看到
+在浏览器中输入 http://example.cdn.com/app/main.css ，你将看到
+
     .box{
 	-webkit-border-radius: 5px;
 	   -moz-border-radius: 5px;

@@ -32,12 +32,14 @@ node proxy.js
 预编译less
 ----------
 稍大一点的网站都是用独立域名的cdn来放静态资源文件的
-<html>
-  <head>
-    <link href="http://example.cdn.com/app/css/main.css"/>
-  </head>
-  some more snippet
-</html>
+    <html>
+      <head>
+        <link href="http://example.cdn.com/app/css/main.css"/>
+      </head>
+      <body>
+        some more snippet
+      </body>
+    </html>
 
 前端在做demo的时候需要模拟cdn环境，也就是说资源路径也要是cdn资源路径，我们可以通过配置host来指向本机，nesir本身即是一个代理
 

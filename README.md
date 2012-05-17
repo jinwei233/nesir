@@ -32,6 +32,7 @@ node proxy.js
 预编译less
 ----------
 稍大一点的网站都是用独立域名的cdn来放静态资源文件的
+
     <html>
       <head>
         <link href="http://example.cdn.com/app/css/main.css"/>
